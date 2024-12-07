@@ -1,193 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<title>Redirecionando</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- Atualize o link abaixo com o URL correto -->
-<meta http-equiv="refresh" content="5;url=https://apptestesgit-2x9r5sgbddzehusfqunp6p.streamlit.app/?embed_options=show_toolbar,light_theme,show_colored_line,show_padding,disable_scrolling,show_footer,dark_theme">
-<style>
-   body {
-       margin: 0;
-       font-family: Arial, sans-serif;
-       line-height: 1.6;
-       color: #333;
-       background-color: #f9f9f9;
-   }
+    <title>Redirecionando</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>
+        // Redirecionar após 5 segundos para uma nova aba
+        setTimeout(function () {
+            window.open("https://apptestesgit-2x9r5sgbddzehusfqunp6p.streamlit.app/", "_blank");
+        }, 5000);
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
 
-   .container {
-       display: grid;
-       grid-template-columns: 1fr 3fr;
-       max-width: 1200px;
-       margin: 0 auto;
-       padding: 20px;
-   }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-   header {
-       grid-column: 1 / -1;
-       background-color: #6c91c2;
-       color: white;
-       padding: 20px 0;
-       text-align: center;
-       font-size: 24px;
-       font-weight: bold;
-   }
+        header {
+            grid-column: 1 / -1;
+            background-color: #6c91c2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-   nav {
-       grid-column: 1 / -1;
-       background-color: #eee;
-       padding: 10px 0;
-       margin-bottom: 20px;
-       display: flex;
-       justify-content: center;
-       gap: 20px;
-   }
+        nav {
+            grid-column: 1 / -1;
+            background-color: #eee;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-   nav a {
-       text-decoration: none;
-       color: #333;
-       font-weight: bold;
-       padding: 10px 15px;
-       border-radius: 5px;
-       transition: background-color 0.3s ease;
-   }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-   nav a:hover {
-       background-color: #6c91c2;
-       color: white;
-   }
+        nav a:hover {
+            background-color: #6c91c2;
+            color: white;
+        }
 
-   .infos {
-       padding: 20px;
-       background-color: #ffffff;
-       border-radius: 8px;
-       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   }
+        .infos {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-   .principal {
-       padding: 20px;
-       background-color: #ffffff;
-       border-radius: 8px;
-       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   }
-   .card {
-       display: flex;
-       flex-wrap: wrap;
-       gap: 15px;
-       margin-top: 15px;
-           }
+        .principal {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-   .card div {
-       flex: 1 1 calc(33.333% - 10px);
-       background: #f9f9f9;
-       border-radius: 8px;
-       text-align: center;
-       padding: 10px;
-       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   }
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
 
-   .card img {
-       width: 150px;
-       height: 150px;
-       object-fit: cover;
-       border-radius: 1rem;
-   }
+        .card div {
+            flex: 1 1 calc(33.333% - 10px);
+            background: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
 
-   footer {
-       grid-column: 1 / -1;
-       background-color: #6c91c2;
-       color: white;
-       text-align: center;
-       padding: 15px 0;
-       font-size: 14px;
-       margin-top: 20px;
-   }
+        footer {
+            grid-column: 1 / -1;
+            background-color: #6c91c2;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
 
-   @media (max-width: 768px) {
-       .container {
-           grid-template-columns: 1fr;
-       }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
 
-       nav {
-           flex-direction: column;
-           gap: 10px;
-       }
-   }
-   @media (max-width: 768px) {
-.menu {
-   flex-direction: column;
-}
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
 
-.wrapper {
-   grid-column: 1 / -1;
-}
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
 
-.infos, .principal {
-   flex: 1 1 100%;
-}
-}
-</style>
+            .wrapper {
+                grid-column: 1 / -1;
+            }
+
+            .infos, .principal {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-   <header>
-       Marcella Garcia Falconério
-   </header>
-   <nav>
-       <a href="index.html">Sobre mim</a>
-       <a href="Formacao.html">Formação acadêmica</a>
-       <a href="redirect.html">Portfólio</a>
-       <a href="contato.html">Contato</a>
-   </nav>
-   <div class="container wrapper">
-       <div class="infos">
-           <p><strong>Ocupação:</strong> Auxiliar Administrativo</p>
-           <p><strong>Data de nascimento:</strong> 22/07/2004</p>
-           <p><strong>Cidade:</strong> Lençóis Paulista, SP</p>
-           <p><strong>Idiomas:</strong> Inglês Intermediário</p>
-           <p>
-               <strong>Aprendizados:</strong>
-               <dl>
-                   <dt>Linguagens:</dt>
-                   <dd>Python Intermediário</dd>
-                   <dd>SQL Intermediário</dd>
-                   <dd>HTML/CSS Básico</dd>
-                   <dt>Visualização:</dt>
-                   <dd>Power BI Intermediário</dd>
-                   <dd>Tableau Básico</dd>
-                   <dt>Estatística</dt>
-                   <dt>Machine Learning/IA Básico</dt>
-               </dl>
-           </p>
-       </div>
-       <section class="principal">
-         <p>Seja bem vindo ao meu painel!</p>
-         <p><a href="https://apptestesgit-2x9r5sgbddzehusfqunp6p.streamlit.app/?embed_options=show_toolbar,light_theme,show_colored_line,show_padding,disable_scrolling,show_footer,dark_theme" target="_blank">Painel-ANP</a></p>
-         <p><span id="redirecionamento" style='border:0; color:#B298DC; text-align: center; font-family: Arial, Helvetica, sans-serif;'></span></p>
-      </section>
-         <script>
-         var s = 5; contar();
-         function contar()
-         {
-            if (s == 0)
-            {
-               document.getElementById('redirecionamento').innerHTML = 'Redirecionando agora. Bom proveito!';
-               clearTimeout(contagem);
+    <header>
+        Marcella Garcia Falconério
+    </header>
+    <nav>
+        <a href="index.html">Sobre mim</a>
+        <a href="Formacao.html">Formação acadêmica</a>
+        <a href="redirect.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="container wrapper">
+        <div class="infos">
+            <p><strong>Ocupação:</strong> Auxiliar Administrativo</p>
+            <p><strong>Data de nascimento:</strong> 22/07/2004</p>
+            <p><strong>Cidade:</strong> Lençóis Paulista, SP</p>
+            <p><strong>Idiomas:</strong> Inglês Intermediário</p>
+            <p>
+                <strong>Aprendizados:</strong>
+                <dl>
+                    <dt>Linguagens:</dt>
+                    <dd>Python Intermediário</dd>
+                    <dd>SQL Intermediário</dd>
+                    <dd>HTML/CSS Básico</dd>
+                    <dt>Visualização:</dt>
+                    <dd>Power BI Intermediário</dd>
+                    <dd>Tableau Básico</dd>
+                    <dt>Estatística</dt>
+                    <dt>Machine Learning/IA Básico</dt>
+                </dl>
+            </p>
+        </div>
+        <section class="principal">
+            <p>Seja bem vindo ao meu painel!</p>
+            <p><a href="https://apptestesgit-2x9r5sgbddzehusfqunp6p.streamlit.app/" target="_blank">Painel-ANP</a></p>
+            <p><span id="redirecionamento" style='border:0; color:#B298DC; text-align: center; font-family: Arial, Helvetica, sans-serif;'></span></p>
+        </section>
+        <script>
+            var s = 5; contar();
+            function contar() {
+                if (s == 0) {
+                    document.getElementById('redirecionamento').innerHTML = 'Redirecionando agora. Bom proveito!';
+                    window.open("https://apptestesgit-2x9r5sgbddzehusfqunp6p.streamlit.app/", "_blank");
+                    clearTimeout(contagem);
+                } else {
+                    document.getElementById('redirecionamento').innerHTML = 'Redirecionando em ' + s-- + ' segundos.';
+                    contagem = setTimeout(contar, 1000);
+                }
             }
-            else if (s == 1)
-            {
-               document.getElementById('redirecionamento').innerHTML = 'Redirecionando em ' + s-- + ' segundo.';
-               contagem = setTimeout(contar, 1000);
-            }
-            else
-            {
-               document.getElementById('redirecionamento').innerHTML = 'Redirecionando em ' + s-- + ' segundos.';
-               contagem = setTimeout(contar, 1000);
-            }
-         }
-         </script>
-          <footer>
-        © 2024 Marcella Garcia Falconério
-    </footer>
-
+        </script>
+        <footer>
+            © 2024 Marcella Garcia Falconério
+        </footer>
+    </div>
 </body>
 </html>
